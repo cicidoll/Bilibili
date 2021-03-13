@@ -19,3 +19,37 @@ body {
   color: #222;
   background-color: #fff;
 }
+
+/* 全站采取IE怪异盒模型 */
+*, .van-popover {
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a {
+  outline: none;
+  cursor: pointer;
+}
+
+.bilifont {
+  font-family: bilifont!important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+* ::selection {
+  background: #73c9e5;
+  color: inherit;
+}
+::selection {
+  background: #1890ff;
+  color: #fff;
+}

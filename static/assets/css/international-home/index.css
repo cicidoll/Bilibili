@@ -1,0 +1,41 @@
+.nav-user-center .user-con.search-icon .bilifont {
+  font-size: 20px;
+}
+
+.nav-user-center .bilifont {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.bili-icon_dingdao_sousuo:before {
+  content: "\E72C";
+}
+
+.international-header a, .van-popover a {
+  text-decoration: none;
+  color: #212121;
+  transition: color .3s;
+}
+
+/* 固定定位 */
+.contact-help {
+  position: fixed;
+  z-index: 101;
+  left: 0;
+  top: calc(50% - 30px);
+  margin-top: -36px;
+  width: 28px;
+  height: 72px;
+  font-size: 12px;
+  color: #505050;
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0 6px 10px 0 #e7e7e7;
+  border-radius: 0 2px 2px 0;
+  padding: 8px 7px;
+  line-height: 14px;
+  display: flex;
+  flex-direction: row;
+}
