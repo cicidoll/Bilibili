@@ -87,11 +87,11 @@
             <!-- 这里是vue组件：投稿按钮 -->
           </div>
         </div>
-        
-        <div class="b-wrap"></div>
       </div>
       <bili-banner></bili-banner>
-      <div class="b-warp"></div>
+      <div class="b-wrap">
+        <div class="primary-menu-itnl"></div>
+      </div>
     </div>
     <div class="first-screen b-wrap"></div>
     <div class="storey-box b-wrap"></div>
@@ -112,7 +112,7 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
 .international-home{
   .international-header{
     min-width: 999px;
@@ -196,6 +196,31 @@ export default {
             align-items: center;
           }
         }
+      }
+    }
+    .b-wrap{
+      height: 108px;
+      width: 1630px;
+      background-color: pink;
+      margin: 0 auto;
+
+      @media screen and (max-width: 1438px){
+        width: 999px;
+      }
+      @media screen and (max-width: 1654px){
+        width: 1198px;
+      }
+      @media screen and (max-width: 1870px){
+        width: 1414px;
+      }
+
+      .primary-menu-itnl {
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        width: 100%;
       }
     }
   }
