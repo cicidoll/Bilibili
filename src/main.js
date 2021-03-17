@@ -1,4 +1,4 @@
-import '../static/assets/css/international-home/index.css'
+import '../static/assets/css/international-home/index.less'
 import '../static/assets/css/index.css'
 
 import { createApp } from 'vue'

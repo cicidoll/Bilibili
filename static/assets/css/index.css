@@ -21,7 +21,7 @@ body {
 }
 
 /* 全站采取IE怪异盒模型 */
-*, .van-popover {
+.international-header *, .van-popover * {
   box-sizing: border-box;
 }
 
