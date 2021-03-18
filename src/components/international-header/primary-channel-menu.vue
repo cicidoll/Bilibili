@@ -1,8 +1,7 @@
 <template>
   <div id="primaryChannelMenu">
     <span>
-      <div role="tooltip" id="van-popover-1953" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:162px;display:none;" tabindex="0">
-        <!---->
+      <div role="tooltip" id="van-popover-1953" class="van-popover van-popper van-popper-channel" style="width:162px;display:none;" tabindex="0">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/douga/mad/" class="name">MAD·AMV</a>
@@ -14,13 +13,25 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-1953" tabindex="0">
+      <div class="item van-popover__reference" tabindex="0">
         <a href="//www.bilibili.com/v/douga/" class="name">
           <span>动画<em>999+</em></span>
         </a>
       </div>
     </span>
     <span>
+      <div role="tooltip" id="van-popover-4171" class="van-popover van-popper van-popper-channel" style="width: 172px; transform-origin: center top; z-index: 2003; display: none;" tabindex="0">
+        <div class="sub-container">
+          <div class="sub-item">
+            <a href="//www.bilibili.com/v/anime/serial/" class="name">连载动画</a>
+            <a href="//www.bilibili.com/v/anime/finish/" class="name">完结动画</a>
+            <a href="//www.bilibili.com/v/anime/information/" class="name">资讯</a>
+            <a href="//www.bilibili.com/v/anime/offical/" class="name">官方延伸</a>
+            <a href="//www.bilibili.com/anime/timeline/" class="name">新番时间表</a>
+            <a href="//www.bilibili.com/anime/index/" class="name">番剧索引</a>
+          </div>
+        </div>
+        <div x-arrow="" class="popper__arrow" style="left: 58.4375px;"></div></div>
       <div class="item van-popover__reference" aria-describedby="van-popover-3004" tabindex="0">
         <a href="//www.bilibili.com/anime/" class="name"><span>番剧<em>377</em></span></a>
       </div>
@@ -186,48 +197,22 @@
 </template>
 
 <script>
-import axios from 'axios'
-// axios.defaults.baseURL = 'http://api.bilibili.com/'
-// axios.defaults.withCredentials = false;
-axios.defaults.headers['Content-Type'] = 'application/json'
-axios.defaults.headers['Upgrade-Insecure-Requests'] = 1
-// axios.defaults.headers['Referer'] = 'http://www.bilibili.com/'
-const testUrl = '/api/x/web-interface/online'
 
 export default {
   methods: {
-    getTest () {
-      // 在axios中使用function () {}的写法，会导致this指向问题出错。
-      // 解决方法：使用ES6箭头函数
-      // axios.get(testUrl, {
-      //     headers: {
-      //       referer: 'http://www.bilibili.com/',
-      //       host: 'http://www.bilibili.com/'
-      //     }
-      //   })
-      //   .then((response) => {
-      //     // handle success
-      //     console.log(response)
-      //   })
-      //   .catch((error) => {
-      //     // handle error
-      //     console.log(error)
-      //   })
-      //创建实例时设置配置的默认值
-    // const httpHandler = axios.create({
-    //   headers: { "Content-Type": "application/json;charset=utf-8" }, //即将被发送的自定义请求头
-    //   withCredentials: false //表示跨域请求时是否需要使用凭证
-    // })
-    // httpHandler.get(testUrl)
-    //   .then(result => {
-    //     console.log(result);
-    //   }).catch(error => {
-    //     console.error(error);
-    //   });
-    }
   },
   mounted() {
-    this.getTest()
   }
 }
 </script>
+
+<style lang="less" scoped>
+.van-popper-channel {
+  .sub-item {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 148px;
+  }
+}
+</style>
