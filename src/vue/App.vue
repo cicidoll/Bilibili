@@ -107,7 +107,7 @@
                   <div class="round yel">
                     <i class="bilifont bili-icon_dingdao_dongtai"></i>
                     <div class="dynamic-update">
-                      <img src="static\image\动态.webp" alt="">
+                      <img :src=imgUrl alt="">
                       <i></i>
                     </div>
                   </div>
@@ -153,8 +153,14 @@ import userConSignin from '../components/international-header/user-con-signin.vu
 import biliBanner from '../components/international-header/bili-banner.vue'
 import primaryChannelMenu from '../components/international-header/primary-channel-menu.vue'
 import primaryFriendshipLink from '../components/international-header/primary-friendship-link.vue'
+import imgUrl from '../../static/image/动态.jpg'
 
 export default {
+  data(){
+    return {
+      imgUrl
+    }
+  },
   components: {
     'user-con-signin': userConSignin,
     'bili-banner': biliBanner,

@@ -1,6 +1,6 @@
 <template>
   <div class="item" tabindex="0">
-    <img src="static\image\头像.webp" class="bili-avatar-img-radius" alt="">
+    <img :src=imgUrl class="bili-avatar-img-radius" alt="">
   </div>
   <div class="item" tabindex="0">
     <span class="name">大会员</span>
@@ -22,6 +22,20 @@
   </div>
 </template>
 
+<script>
+import imgUrl from '../../../static/image/头像.jpg'
+
+export default {
+  data(){
+    return {
+      imgUrl
+    }
+  },
+  setup() {
+    
+  },
+}
+</script>
 
 <style lang="less" scoped>
 .item{
