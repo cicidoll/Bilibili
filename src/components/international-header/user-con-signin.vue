@@ -1,5 +1,7 @@
 <template>
-  <div class="item" tabindex="0"></div>
+  <div class="item" tabindex="0">
+    <img src="static\image\头像.webp" class="bili-avatar-img-radius" alt="">
+  </div>
   <div class="item" tabindex="0">
     <span class="name">大会员</span>
   </div>
@@ -20,7 +22,8 @@
   </div>
 </template>
 
-<style lang="less">
+
+<style lang="less" scoped>
 .item{
   line-height: 30px;
   height: 30px;
@@ -37,6 +40,8 @@
 }
 .item:nth-of-type(1){
   height: 36px;
-  background-color: pink;
+}
+.bili-avatar-img-radius {
+  border-radius: 50%;
 }
 </style>

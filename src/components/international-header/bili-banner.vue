@@ -5,7 +5,7 @@
 </template>
 
 
-<style lang="less">
+<style lang="less" scoped>
 .bili-banner{
   background-image: url('../../../static/image/edaa5977e1e9d1807b4b608074dac3076bc07ca1.png');
   margin: 0 auto;

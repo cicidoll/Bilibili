@@ -1,7 +1,7 @@
 <template>
   <div id="primaryChannelMenu">
     <span>
-      <div role="tooltip" id="van-popover-1953" class="van-popover van-popper van-popper-channel" style="width:162px;display:none;" tabindex="0">
+      <div role="tooltip" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/douga/mad/" class="name">MAD·AMV</a>
@@ -20,7 +20,7 @@
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-4171" class="van-popover van-popper van-popper-channel" style="width: 172px; transform-origin: center top; z-index: 2003; display: none;" tabindex="0">
+      <div role="tooltip" class="van-popover van-popper van-popper-channel" style="display: none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/anime/serial/" class="name">连载动画</a>
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div x-arrow="" class="popper__arrow" style="left: 58.4375px;"></div></div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-3004" tabindex="0">
+      <div class="item van-popover__reference" tabindex="0">
         <a href="//www.bilibili.com/anime/" class="name"><span>番剧<em>377</em></span></a>
       </div>
     </span>
@@ -51,7 +51,7 @@
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-3650" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:172px;display:none;" tabindex="0">
+      <div role="tooltip" id="van-popover-3650" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/dance/otaku/" class="name">宅舞</a>
@@ -63,17 +63,17 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-3650" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/dance/" class="name"><span>舞蹈<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div class="item van-popover__reference" aria-describedby="van-popover-1517" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/game/" class="name"><span>游戏<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-7227" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:172px;display:none;" tabindex="0">
+      <div role="tooltip" id="van-popover-7227" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/technology/science/" class="name">科学科普</a>
@@ -90,7 +90,7 @@
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-1301" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:80px;display:none;" tabindex="0">
+      <div role="tooltip" id="van-popover-1301" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/digital/mobile/" class="name">手机平板</a>
@@ -100,27 +100,27 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-1301" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/digital/" class="name"><span>数码<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div class="item van-popover__reference" aria-describedby="van-popover-4042" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/life/" class="name"><span>生活<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div class="item van-popover__reference" aria-describedby="van-popover-3374" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/kichiku/" class="name"><span>鬼畜<em>186</em></span></a>
       </div>
     </span>
     <span>
-      <div class="item van-popover__reference" aria-describedby="van-popover-6827" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/fashion/" class="name"><span>时尚<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-8729" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:60px;display:none;" tabindex="0">
+      <div id="van-popover-8729" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/information/hotspot/" class="name">热点</a>
@@ -130,12 +130,12 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-8729" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/information/" class="name"><span>资讯<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-2133" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:62px;display:none;" tabindex="0">
+      <div role="tooltip" id="van-popover-2133" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/ent/variety/" class="name">综艺</a>
@@ -143,12 +143,12 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-2133" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/v/ent/" class="name"><span>娱乐<em>999+</em></span></a>
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-9521" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:84px;display:none;" tabindex="0">
+      <div role="tooltip" id="van-popover-9521" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/cinephile/cinecism/" class="name">影视杂谈</a>
@@ -163,7 +163,7 @@
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-9173" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width:68px;display:none;" tabindex="0">
+      <div role="tooltip" id="van-popover-9173" class="van-popover van-popper van-popper-channel" style="display:none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/documentary/" class="name">纪录片</a>
@@ -172,12 +172,12 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-9173" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="//www.bilibili.com/cinema/" class="name"><span>放映厅<em>193</em></span></a>
       </div>
     </span>
     <span>
-      <div role="tooltip" id="van-popover-37" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="width: 162px; display: none;" tabindex="0">
+      <div role="tooltip" id="van-popover-37" aria-hidden="true" class="van-popover van-popper van-popper-channel" style="display: none;">
         <div class="sub-container">
           <div class="sub-item">
             <a href="//www.bilibili.com/v/life/funny" class="name">搞笑</a>
@@ -188,7 +188,7 @@
           </div>
         </div>
       </div>
-      <div class="item van-popover__reference" aria-describedby="van-popover-37" tabindex="0">
+      <div class="item van-popover__reference">
         <a href="javascript:;" class="name"><span>更多<em style="display: none;">--</em></span>
         <i class="bilifont bili-icon_caozuo_xiangyou-copy"></i></a>
       </div>
@@ -199,14 +199,11 @@
 <script>
 
 export default {
-  methods: {
-  },
-  mounted() {
-  }
 }
 </script>
 
 <style lang="less" scoped>
+
 .van-popper-channel {
   .sub-item {
     flex-direction: column;

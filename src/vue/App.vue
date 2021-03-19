@@ -138,7 +138,7 @@
           <span class="tab-line-itnl"></span>
           <primary-channel-menu class="channel-menu-itnl"></primary-channel-menu>
           <span class="tab-line-itnl none"></span>
-          <div id="primaryFriendshipLink" class="friendship-link report-wrap-module"></div>
+          <primary-friendship-link></primary-friendship-link>
         </div>
       </div>
     </div>
@@ -152,17 +152,19 @@
 import userConSignin from '../components/international-header/user-con-signin.vue'
 import biliBanner from '../components/international-header/bili-banner.vue'
 import primaryChannelMenu from '../components/international-header/primary-channel-menu.vue'
+import primaryFriendshipLink from '../components/international-header/primary-friendship-link.vue'
 
 export default {
   components: {
     'user-con-signin': userConSignin,
     'bili-banner': biliBanner,
-    'primary-channel-menu':primaryChannelMenu
+    'primary-channel-menu':primaryChannelMenu,
+    'primary-friendship-link':primaryFriendshipLink
   }
 }
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .international-home{
   .international-header{
     min-width: 999px;
@@ -257,6 +259,9 @@ export default {
       // 这里的max-width要从大到小排列
       @media screen and (max-width: 1870px){
         width: 1414px;
+        .friendship-link {
+          width: 242px;
+        }
       }
       @media screen and (max-width: 1654px){
         width: 1198px;
@@ -265,6 +270,9 @@ export default {
         }
         .tab-line-itnl.none {
           margin: 0 12px 0 0;
+        }
+        .friendship-link {
+          width: 220px;
         }
       }
       @media screen and (max-width: 1438px){
@@ -374,6 +382,14 @@ export default {
             }
 
           }
+        }
+        .channel-menu-itnl {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          height: 5rem;
+          height: 68px;
+          flex: 1;
         }
       }
     }
