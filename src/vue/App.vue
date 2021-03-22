@@ -107,7 +107,7 @@
                   <div class="round yel">
                     <i class="bilifont bili-icon_dingdao_dongtai"></i>
                     <div class="dynamic-update">
-                      <img :src=imgUrl alt="">
+                      <img :src=dongTaiImgUrl alt="">
                       <i></i>
                     </div>
                   </div>
@@ -142,7 +142,12 @@
         </div>
       </div>
     </div>
-    <div class="first-screen b-wrap"></div>
+    <div class="first-screen b-wrap">
+      <div class="space-between">
+        <div id="reportFirst1" class="focus-carousel home-slide report-wrap-module report-scroll-module" ></div>
+        <div class="rcmd-box-wrap"></div>
+      </div>
+    </div>
     <div class="storey-box b-wrap"></div>
     <a href="//www.bilibili.com/v/customer-service" target="_blank" class="contact-help">联系客服</a>
   </div>
@@ -153,12 +158,12 @@ import userConSignin from '../components/international-header/user-con-signin.vu
 import biliBanner from '../components/international-header/bili-banner.vue'
 import primaryChannelMenu from '../components/international-header/primary-channel-menu.vue'
 import primaryFriendshipLink from '../components/international-header/primary-friendship-link.vue'
-import imgUrl from '../../static/image/动态.jpg'
+import dongTaiImgUrl from '../../static/image/动态.jpg'
 
 export default {
   data(){
     return {
-      imgUrl
+      dongTaiImgUrl
     }
   },
   components: {
@@ -171,6 +176,167 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.b-wrap{
+  height: 108px;
+  width: 1630px;
+  margin: 0 auto;
+
+  // @media screen and max-width
+  // 这里的max-width要从大到小排列
+  @media screen and (max-width: 1870px){
+    width: 1414px;
+    .friendship-link {
+      width: 242px;
+    }
+  }
+  @media screen and (max-width: 1654px){
+    width: 1198px;
+    .tab-line-itnl {
+      margin: 0 8px;
+    }
+    .tab-line-itnl.none {
+      margin: 0 12px 0 0;
+    }
+    .friendship-link {
+      width: 220px;
+    }
+  }
+  @media screen and (max-width: 1438px){
+    width: 999px;
+    .tab-line-itnl {
+      margin: 0 8px;
+    }
+    .focus-carousel {
+      width: 459px;
+      height: 202px;
+    }
+  }
+
+  .primary-menu-itnl {
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+
+    .page-tab{
+      display: flex;
+      align-items: center;
+      .con{
+        display: flex;
+        li{
+          cursor: pointer;
+          width: 66px;
+          height: 68px;
+          text-align: center;
+          font-size: 14px;
+          white-space: nowrap;
+          border: 1px solid #fff;
+          border-radius: 16px;
+          transition: all .3s;
+
+          @media screen and (max-width: 1870px){
+            width: 58px;
+          }
+          @media screen and (max-width: 1654px){
+            width: 50px!important;
+          }              
+          @media screen and (max-width: 1438px){
+            width: 50px;
+          }
+
+          .round{
+            position: relative;
+            width: 36px;
+            height: 36px;
+            background: #ff5c7c;
+            border-radius: 36px;
+            line-height: 36px;
+            text-align: center;
+            margin: 0 auto 4px;
+
+            .bilifont{
+              color: #fff;
+              font-size: 28px;
+            }
+
+            .dynamic-update{
+              position: absolute;
+              width: 36px;
+              height: 36px;
+              left: 0;
+              top: 0;
+
+              img {
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                left: 0;
+                top: 0;
+
+                border-radius: 50%;
+              }
+            }
+          }
+
+          .round.yel {
+            background: #fcba2a;
+          }
+          .round.orange {
+            background: #ff716d;
+          }
+          .round.channel {
+            background: #6dc781;
+          }
+          .channel-name {
+            width: 64px;
+            height: 20px;
+            display: block;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            -webkit-line-clamp: 1;
+
+            @media screen and (max-width: 1870px){
+              width: 58px!important;
+            }
+            @media screen and (max-width: 1654px){
+              width: 50px!important;
+            }
+            @media screen and (max-width: 1438px){
+              width: 50px!important;
+            }
+          }            
+        }
+
+      }
+    }
+    .channel-menu-itnl {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 5rem;
+      height: 68px;
+      flex: 1;
+    }
+  }
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .focus-carousel {
+    position: relative;
+    width: 550px;
+    height: 242px;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: pink;
+  }
+}
+
 .international-home{
   .international-header{
     min-width: 999px;
@@ -256,150 +422,6 @@ export default {
         }
       }
     }
-    .b-wrap{
-      height: 108px;
-      width: 1630px;
-      margin: 0 auto;
-
-      // @media screen and max-width
-      // 这里的max-width要从大到小排列
-      @media screen and (max-width: 1870px){
-        width: 1414px;
-        .friendship-link {
-          width: 242px;
-        }
-      }
-      @media screen and (max-width: 1654px){
-        width: 1198px;
-        .tab-line-itnl {
-          margin: 0 8px;
-        }
-        .tab-line-itnl.none {
-          margin: 0 12px 0 0;
-        }
-        .friendship-link {
-          width: 220px;
-        }
-      }
-      @media screen and (max-width: 1438px){
-        width: 999px;
-        .tab-line-itnl {
-          margin: 0 8px;
-        }
-      }
-
-      .primary-menu-itnl {
-        display: flex;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 0;
-        width: 100%;
-
-        .page-tab{
-          display: flex;
-          align-items: center;
-          .con{
-            display: flex;
-            li{
-              cursor: pointer;
-              width: 66px;
-              height: 68px;
-              text-align: center;
-              font-size: 14px;
-              white-space: nowrap;
-              border: 1px solid #fff;
-              border-radius: 16px;
-              transition: all .3s;
-
-              @media screen and (max-width: 1870px){
-                width: 58px;
-              }
-              @media screen and (max-width: 1654px){
-                width: 50px!important;
-              }              
-              @media screen and (max-width: 1438px){
-                width: 50px;
-              }
-
-              .round{
-                position: relative;
-                width: 36px;
-                height: 36px;
-                background: #ff5c7c;
-                border-radius: 36px;
-                line-height: 36px;
-                text-align: center;
-                margin: 0 auto 4px;
-
-                .bilifont{
-                  color: #fff;
-                  font-size: 28px;
-                }
-
-                .dynamic-update{
-                  position: absolute;
-                  width: 36px;
-                  height: 36px;
-                  left: 0;
-                  top: 0;
-
-                  img {
-                    position: absolute;
-                    width: 36px;
-                    height: 36px;
-                    left: 0;
-                    top: 0;
-
-                    border-radius: 50%;
-                  }
-                }
-              }
-
-              .round.yel {
-                background: #fcba2a;
-              }
-              .round.orange {
-                background: #ff716d;
-              }
-              .round.channel {
-                background: #6dc781;
-              }
-              .channel-name {
-                width: 64px;
-                height: 20px;
-                display: block;
-                overflow: hidden;
-                -webkit-box-orient: vertical;
-                text-overflow: ellipsis;
-                word-break: break-all;
-                -webkit-line-clamp: 1;
-
-                @media screen and (max-width: 1870px){
-                  width: 58px!important;
-                }
-                @media screen and (max-width: 1654px){
-                  width: 50px!important;
-                }
-                @media screen and (max-width: 1438px){
-                  width: 50px!important;
-                }
-              }            
-            }
-
-          }
-        }
-        .channel-menu-itnl {
-          display: flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          height: 5rem;
-          height: 68px;
-          flex: 1;
-        }
-      }
-    }
-
     .van-popover {
       -webkit-font-smoothing: antialiased;
       font: 14px -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;

@@ -1,6 +1,6 @@
 <template>
   <div class="item" tabindex="0">
-    <img :src=imgUrl class="bili-avatar-img-radius" alt="">
+    <img :src=imgUrl class="bili-avatar-img-radius" alt="" height="36" width="36">
   </div>
   <div class="item" tabindex="0">
     <span class="name">大会员</span>

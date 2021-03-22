@@ -4,4 +4,5 @@
 4、[https://api.bilibili.com/x/web-interface/dynamic/region?ps=12&rid=181]  
 5、primaryChannelMenu块级元素里，关于导航栏的分类-hover-下拉菜单部分，可以用css的方法来实现。（但是根据我的想法，如果多次下拉菜单，导致元素在多次display:none & block变化，应该会导致浏览器页面多次重排，影响性能。【注： visibility:hidden 只会引起重绘，可以暂时列入可优化选项】）  
 6、vue组件里的style标签，scoped选项可以形成组件内样式域，避免样式污染。  
-7、primary-channel-menu.vue组件中的ToolTip暂且搁置，待下次优化。
+7、primary-channel-menu.vue组件中的ToolTip暂且搁置，待下次优化。  
+8、【2021-3-22】发现源网页中的组件分类更加细致，接下来可以考虑在这方面作调整。
